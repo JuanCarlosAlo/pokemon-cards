@@ -1,5 +1,10 @@
 // El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
-import { sayHello } from './demo.js';
+import { rotateCard, setCards } from '../js/cardRotate.js';
+const card = document.getElementById('card');
 
-sayHello();
+rotateCard();
+
+card.addEventListener('click', e => {
+  setCards(e.target);
+});
