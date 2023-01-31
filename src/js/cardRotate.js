@@ -1,9 +1,9 @@
-import { cardsToPlay } from '../js/chooseCards.js';
+import { cardsToPlay } from "../js/chooseCards.js";
 
-const cards = document.querySelectorAll('.card');
-const playerScore = document.getElementById('player-score');
-const playerCombo = document.getElementById('player-combo');
-const retry = document.getElementById('retry');
+const cards = document.querySelectorAll(".card");
+const playerScore = document.getElementById("player-score");
+const playerCombo = document.getElementById("player-combo");
+const retry = document.getElementById("retry");
 let cardSelected;
 let cardCompared;
 let score = 0;
@@ -11,13 +11,13 @@ let canPlay = true;
 let combo = 0;
 let allCardsRotated = 0;
 
-const rotateCard = card => {
-  cards.forEach(cardElement => {
-    cardElement.classList.add('card--show');
+const rotateCard = (card) => {
+  cards.forEach((cardElement) => {
+    cardElement.classList.add("card--show");
   });
   const timeoutId = setTimeout(() => {
-    cards.forEach(cardElement => {
-      cardElement.classList.remove('card--show');
+    cards.forEach((cardElement) => {
+      cardElement.classList.remove("card--show");
       clearTimeout(timeoutId);
     });
   }, 2000);
@@ -28,40 +28,44 @@ const compareCards = () => {
     score++;
     combo++;
     allCardsRotated += 2;
-    console.log(playerScore);
   } else {
     combo = 0;
-    cardSelected.classList.remove('card--show');
-    cardCompared.classList.remove('card--show');
+    cardSelected.classList.remove("card--show");
+    cardCompared.classList.remove("card--show");
   }
   playerScore.textContent = score * combo;
-  playerCombo.textContent = 'x' + (Number(combo) + 1);
+  playerCombo.textContent = "x" + (Number(combo) + 1);
   cardCompared = undefined;
   cardSelected = undefined;
   canPlay = true;
   console.log(allCardsRotated, cardsToPlay);
   if (allCardsRotated === cardsToPlay) {
     retryUnhide();
+    allCardsRotated = 0;
   }
 };
 
 const retryUnhide = () => {
-  retry.style.display = 'flex';
+  retry.style.display = "flex";
 };
 const retryHide = () => {
-  retry.style.display = 'none';
+  retry.style.display = "none";
+  combo = 0;
+  score = 0;
+  playerScore.textContent = score;
+  playerCombo.textContent = combo;
 };
 
-const setCards = clickedCard => {
+const setCards = (clickedCard) => {
   if (!cardSelected) {
     cardSelected = clickedCard;
-    cardSelected.classList.add('card--show');
+    cardSelected.classList.add("card--show");
   } else {
     canPlay = false;
     cardCompared = clickedCard;
-    cardCompared.classList.add('card--show');
+    cardCompared.classList.add("card--show");
     clickedCard.addEventListener(
-      'transitionend',
+      "transitionend",
       () => {
         if (cardSelected && cardCompared) {
           compareCards();

@@ -1,5 +1,5 @@
 .button{
-    position: absolute;
+    position: fixed;
     display: none;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     height: 50px;
     border-radius: 2rem;
     border: 5px solid #fff;
-    top: calc(70% - 25px);
+    top: calc(50% - 25px);
     left:calc(50% - 125px);
     font-size: 2rem;
     color: #fff;
