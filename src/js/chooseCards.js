@@ -1,4 +1,4 @@
-let cardsToPlay = 4;
+let cardsToPlay = 30;
 let arrayOfCards = [];
 let halfArrayOfCards = [];
 let newArray;
