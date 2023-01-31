@@ -1,6 +1,12 @@
 // El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
-import { rotateCard, setCards, canPlay, retry } from '../js/cardRotate.js';
+import {
+  rotateCard,
+  setCards,
+  canPlay,
+  retry,
+  retryHide
+} from '../js/cardRotate.js';
 import { chooseCards, createCards } from '../js/chooseCards.js';
 const cardContainer = document.getElementById('card');
 
@@ -20,4 +26,5 @@ retry.addEventListener('click', () => {
   rotateCard();
   chooseCards();
   createCards(cardContainer);
+  retryHide();
 });

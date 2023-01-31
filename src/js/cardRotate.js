@@ -42,8 +42,6 @@ const compareCards = () => {
   console.log(allCardsRotated, cardsToPlay);
   if (allCardsRotated === cardsToPlay) {
     retryUnhide();
-  } else {
-    retryHide();
   }
 };
 
@@ -74,4 +72,4 @@ const setCards = clickedCard => {
   }
 };
 
-export { rotateCard, setCards, canPlay, retry };
+export { rotateCard, setCards, canPlay, retry, retryHide };
