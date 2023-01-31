@@ -16,10 +16,12 @@
     position: absolute;
     bottom: 0;
     display:flex ;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 350px;
     padding: 2rem;
+    gap: 20px;
     border-radius: 2rem;
     background-color: white;
 }

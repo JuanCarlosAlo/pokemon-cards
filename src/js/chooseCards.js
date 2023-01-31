@@ -1,4 +1,4 @@
-let cardsToPlay = 30;
+let cardsToPlay = 10;
 let arrayOfCards = [];
 let halfArrayOfCards = [];
 
@@ -16,32 +16,32 @@ const chooseCards = () => {
   return chooseCards(arrayOfCards);
 };
 
-const createImgCard = (index) => {
-  const imgCard = document.createElement("img");
-  imgCard.classList.add("card__image");
+const createImgCard = index => {
+  const imgCard = document.createElement('img');
+  imgCard.classList.add('card__image');
   imgCard.src = `assets/images/${arrayOfCards[index]}.png`;
 
   return imgCard;
 };
 
 const createBackCard = () => {
-  const cardBack = document.createElement("div");
-  cardBack.classList.add("card__back");
+  const cardBack = document.createElement('div');
+  cardBack.classList.add('card__back');
   return cardBack;
 };
 
 const createFrontCard = () => {
-  const cardFront = document.createElement("div");
-  cardFront.classList.add("card__front");
+  const cardFront = document.createElement('div');
+  cardFront.classList.add('card__front');
 
   return cardFront;
 };
 
-const createCards = (cardContainer) => {
+const createCards = cardContainer => {
   const fragment = document.createDocumentFragment();
   arrayOfCards.forEach((card, index) => {
-    const cardElement = document.createElement("div");
-    cardElement.classList.add("card");
+    const cardElement = document.createElement('div');
+    cardElement.classList.add('card');
 
     cardElement.dataset.card = `card-${arrayOfCards[index]}`;
 
@@ -57,4 +57,4 @@ const createCards = (cardContainer) => {
   cardContainer.append(fragment);
 };
 
-export { chooseCards, createCards };
+export { chooseCards, createCards, cardsToPlay };

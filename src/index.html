@@ -11,13 +11,16 @@
   <body>
     <div class="header">
       <div class="score-board">
-        <div class="core-board__text text">Player score</div>
-        <div class="player-score">1</div>
+        <div class="score-board__text text">Player score</div>
+        <div id="player-score" class="player-score texts">0</div>
+        <div class="score-board__text text">Player combo</div>
+
+        <div id="player-combo" class="player-score text">x0</div>
       </div>
     </div>
     <div id="card" class="card-container">
   </div>
-    <div class="button">Retry</div>
+    <div id="retry" class="button">Retry?</div>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
