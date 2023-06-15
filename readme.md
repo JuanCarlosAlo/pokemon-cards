@@ -4,7 +4,7 @@
 
 ## Ejemplo en vivo
 
-- [Live Demo](https://juancarlosalo.github.io/booking/)
+- [Live Demo]()
 
 ## Descripción
 
