@@ -1,6 +1,6 @@
-# Booking
+# Pokemon Cards
 
-![Imagen del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/booking/main/assets/images/readme.png)
+![Imagen del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/pokemon-cards/main/src/assets/images/readme-.jpg)
 
 ## Ejemplo en vivo
 
@@ -8,11 +8,11 @@
 
 ## Descripción
 
-Booking es una aplicacion de reserva en funcion de la fecha real, el dia de la semana, el numero de comensales, el turno y la hora
+Pokemon cards es un juego de cartas realizado con js css y html que consiste en voltear las cartas en parejas a ciegas.
 
 ## ¿Qué he aprendido en este proyecto?
 
-En este proyecto se usa javascript para crear los dias del mes en un bucle dependiendo del mes actual usando el objeto .date(). dependidendo del dia actual se desavilitan los dias anteriores y dependiendo del dia seleccionado se habilitan inputs que dependiendo el valor marcado habilitan los siguientes inputs con informacion distinta determinado por vairables guardadas al hacer click.
+En este proyecto se usa javascript para crear todas las cartas pokemon, se duplican el numero de cartas elegido y se barajan con una operacion para que sean aleatorias. Para que las cartas se giren si el usuario se equivoca se usa una condicion bandera, ya que todas las cartas tienen un dataset unico que solo coincida con su gemelo si esta condicion se cumple se suma un punto y se suma un combo si el usuario falla se vuelven a dar la vuelta y el combo se resetea. Cuando todas las cartas han sido volteadas un boton de reset aparece que vuelve a cargar cartas como al principio.
 
 ## Tecnologías
 
@@ -28,15 +28,15 @@ Si quieres echar un vistazo al proyecto, te recomiendo:
 
 ## Ordenador
 
-![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/booking/main/assets/images/readme.png)
+![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/pokemon-cards/main/src/assets/images/readme-.jpg)
 
 ## Estados activos
 
-![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/booking/main/assets/images/readme2.png)
+![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/pokemon-cards/main/src/assets/images/readme-2.jpg)
 
 ## Parte de Codigo
 
-![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/booking/main/assets/images/readme3.png)
+![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/pokemon-cards/main/src/assets/images/readme-3.jpg)
 
 ## Autor
 
