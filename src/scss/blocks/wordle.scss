@@ -1,0 +1,48 @@
+
+
+.game-board{
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.game-board__row{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.letters{
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.input{
+    margin-bottom: 1rem;
+}
+
+.gray{
+    background-color: gray;
+ }
+ .yellow{
+    background-color: orange;
+ }
+ .green{
+    background-color: green;
+ }
+
+
+
+ .result{
+    display: none;
+    margin-bottom: 2rem;
+ }
+ .result--show{
+    display: block;
+   
+ }
